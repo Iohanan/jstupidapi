@@ -1,3 +1,4 @@
+from math import sqrt, log10
 
 class Acompound(object):
 	''' class for calculate parts about acompound interest '''
@@ -12,12 +13,15 @@ class Acompound(object):
 		return float('%.2f' % _capital)
 	
 	@staticmethod
-	def calculate_interest():
-		pass                                                                                                         
+	def calculate_interest(amount, capital, time_interest):
+		_interest = sqrt(amount/capital, time_interest) - 1
+		return float('%4.f' % _interest)                                                                                                         
 	
 	@staticmethod
-	def calculate_time_interest():
-		pass
+	def calculate_time_interest(amount, capital,interest):
+		_time_interest = log10(amount/capital) / log10(1+interest)
+		return float('%.2f' % _time_interest)
+		
 
 
 if __name__ == '__main__':
