@@ -9,5 +9,4 @@ class Acompound(object):
 
 
 if __name__ == '__main__':
-	print(Acompound.calculate_amount(capital_rate=1000,
-	 interest_rate=1.2, time_interest=12))
+	pass
