@@ -14,7 +14,7 @@ class Acompound(object):
 	
 	@staticmethod
 	def calculate_interest(amount, capital, time_interest):
-		_interest = sqrt(amount/capital, time_interest) - 1
+		_interest = pow(amount/capital, 1/time_interest) - 1
 		return float('%4.f' % _interest)                                                                                                         
 	
 	@staticmethod
